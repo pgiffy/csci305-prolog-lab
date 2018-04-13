@@ -1,0 +1,103 @@
+Peter Gifford Prolog Lab Questions
+
+1. 
+?- father(X, 'Queen Elizabeth II').
+X = 'King George VI' ;
+false.
+2.
+?- grandmother(X, 'Queen Elizabeth II').
+X = 'Queen Mary' ;
+false.
+3. 
+?- grandfather(X, 'Queen Elizabeth II').
+X = 'King George V' ;
+false.
+4.
+?- grandparent(X, 'Queen Elizabeth II').
+X = 'King George V' ;
+X = 'Queen Mary' ;
+false.
+5.
+?- grandparent('Queen Elizabeth II', X).
+X = 'Prince William' ;
+X = 'Prince Henry' .
+6.
+?- sibling(X, 'Queen Elizabeth II').
+X = 'Princess Margaret'.
+7. 
+?- son(X, 'Queen Elizabeth II').
+X = 'Prince Charles' ;
+X = 'Prince Andrew' ;
+X = 'Prince Edward'.
+8.
+?- daughter(X, 'Queen Elizabeth II').
+X = 'Princess Anne' ;
+false.
+9.
+?- aunt(X, 'Lady Diana Spencer').
+X = 'Princess Margaret' ;
+false.
+10.
+?- spouse(X, 'Prince William').
+X = 'Catherine Middleton' ;
+false.
+11.
+?- ancestor(X, 'Prince Henry').
+X = 'Prince Charles' ;
+X = 'Lady Diana Spencer' ;
+X = 'Queen Elizabeth II' ;
+X = 'Prince Philip' ;
+X = 'King George VI' ;
+X = 'Lady Elizabeth Bowes-Lyon' ;
+X = 'King George V' ;
+X = 'Queen Mary' ;
+X = 'King Edward VII' ;
+X = 'Princess Alexandra of Denmark' ;
+X = 'Prince Albert' ;
+X = 'Queen Victoria' ;
+false.
+12.
+?- descendant('Queen Victoria', Y).
+false.
+13.
+?- older('Prince Henry', 'Prince William').
+false.
+14.
+?- older(X, 'Queen Elizabeth II').
+X = 'Queen Victoria' ;
+X = 'Princess Alexandra of Denmark' ;
+X = 'Queen Mary' ;
+X = 'Mrs Simpson' ;
+X = 'Lady Elizabeth Bowes-Lyon' ;
+X = 'Prince Albert' ;
+X = 'King Edward VII' ;
+X = 'King George V' ;
+X = 'King Edward VIII' ;
+X = 'King George VI' ;
+X = 'Prince Philip' ;
+false.
+15.
+?- regentWhenBorn(X, 'Queen Elizabeth II').
+X = 'King George V' ;
+false.
+
+16. I really like the simplicity of giving commands. This simplicity and ability to find the answer itself makes certain tasks really simple in Prolog. When writing the command for who was ruler when a person was born, I thought it was going to have to be more complicated, but when I ran a really simple command as a test, it found information that I did not think that it would, and this greatly simplified the command for me. This far reaching access for the commands are really helpful.
+
+17. I dislike how there has to be a lot of data entered before hand to make commands. While in this case you wrote out the relationships, I imagine this could get really tedious. It also opens up a lot of room for error because if you do not catch the mistake being made, it will not reveal itself until a pretty specific test is run and it uses that specific relationship in some way.
+
+18. I did enjoy this lab. It was fairly short which was nice, also using this style of language was really cool. I had never really seen these types of command based language systems before and it was cool. One annoying thing about it was that the family tree was just given to us in the form of all the relationships that were written. I eventually wrote out a family tree so that I could reference it, but I have a feeling you were looking at some tree diagram when writing the relationships, and including that would have been helpful since a lot of the trees online are either only recent family connections, or literally every connection ever.
+
+19. I spent about 3 hours on this lab.
+
+20.I have a feeling at some point I will use prolog again. IF I work on AI or something I can see how this could be used to have the bot write its own scripts. The simplicity is also really nice and I will probably at some point find a reason to use this as a simple alternative to another language. However, as I said before, I feel like this would most likely come up in some AI or machine learning environment.
+
+EC1.
+?- cousin(X, 'Prince Charles').
+X = 'Viscount Linley' ;
+X = 'Lady Sarah Chatto' ;
+false.
+EC2.
+?- cousin('Prince Charles', X).
+X = 'Viscount Linley' ;
+X = 'Lady Sarah Chatto' ;
+false.
