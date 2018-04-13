@@ -205,3 +205,4 @@ The rubric for this assignment is as follows:
 * 5 points total for questions 16-20
 * 10 points for working code, with no errors: All or nothing
 * 5 points for documented code
+#csci305-prolog-lab
